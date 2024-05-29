@@ -9,5 +9,8 @@ interface CountProps {
 export function Count(props: CountProps) {
   console.log(props);
   const [count, setCount] = useState(0);
-  return <button onClick={() => setCount(count + 1)}>{count}</button>;
+  return <div>
+    <button onClick={() => setCount(count + 1)}>{count}</button>
+    <span>我是一个傻逼自定义组件</span>
+  </div>;
 }
